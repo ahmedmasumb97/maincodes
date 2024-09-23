@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Author Details{% endblock %}
+
+{% block content %}
+
+
+
+<h1>Author Details</h1>
+
+
+<form action="" method="post" class= 'form-control'>
+  
+    {% csrf_token %}
+   
+     <ul>
+        {% for data in data %}
+        <li>{{ data.name }} - {{ data.phone_number}} - {{ data.bio}} </li>
+        {% endfor %}
+     </ul>
+
+
+    <button type="submit" class="btn btn-primary"><a class='text-white ' href='/blog/task_list'>Back Home</a></button>
+    <button type="button" class='btn btn-primary'><a href="/blog/add_author" class='text-white'>Add author</a></button>
+
+</form>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+{% endblock  %}

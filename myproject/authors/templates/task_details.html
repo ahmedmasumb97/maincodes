@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Data details{% endblock  %}
+{% block content %}
+
+
+<h1>Task List</h1>
+<ul>
+ 
+    
+    <li><strong>Name</strong>: {{ task.name}}</li>
+    <li><strong>Bio</strong>: {{ task.bio}}</li>
+    <li><strong>Phone Number</strong>: {{ task.phone_number}}</li>
+
+
+  
+</ul>
+
+
+<button type='button' ><a href='/blog/task_list'>Go to menu</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock  %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Home page{% endblock %}
+
+{% block content %}
+
+
+
+
+
+  <h1>Catagories</h1>
+
+
+  <div class="card">
+    {% for post in category %}
+    <div class="card-body">
+      <h4 class="card-title"><strong>Name</strong>: {{ post.name }}</h4>
+      
+    {% endfor %}
+  </div>
+
+
+
+ 
+
+
+
+
+
+
+
+{% endblock  %}

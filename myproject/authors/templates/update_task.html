@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}Update task{% endblock %}
+
+{% block content %}
+
+
+
+
+<h1>Upadate task</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+
+    <button type='submit'>Save as</button>
+    <button type='button' ><a href='/blog/task_list'>Go to menu</a></button>
+
+    
+</form>
+
+
+
+
+
+
+
+
+{% endblock  %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}Data List{% endblock  %}
+{% block content %}
+
+
+<h1>Task List</h1>
+<ul>
+    {% for task in task %}
+    
+    <li><a href='{% url 'task_details' task.pk %}'> {{ task.name }}   </a>- {{ task.bio }} :- {{ task.phone_number }}</li> 
+    <button type='button'> <a href=' {% url 'task_delete' task.pk %} '> Delete </a>  </button>
+    <button type='button'> <a href=' {% url 'task_update' task.pk %} '> Update </a>  </button>
+
+    {% endfor %}
+</ul>
+
+
+
+
+<button type='button' ><a href='/blog/add_author'>Add Data</a></button>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock  %}

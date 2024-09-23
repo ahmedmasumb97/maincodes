@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Home page{% endblock %}
+
+{% block content %}
+
+
+
+<h1>Post Details </h1>
+
+<div class="card">
+    {% for post in data %}
+    <div class="card-body">
+      <h4 class="card-title"><strong>Title</strong>: {{ post.title }}</h4>
+      <p class="card-text"><strong>Content </strong>: {{ post.content }}</p>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Author Name: </strong>  {{ post.author.name }}</li>
+        
+      </ul>
+      <ul>
+        <button type='button' class='btn btn-primary mt-2'><a class='text-white' href='{% url 'update_post' post.pk  %}'>Update</a></button>
+        <button type='button' class='btn btn-primary mt-2'><a class='text-white' href='{% url 'delete_post' post.pk  %}'>Delete</a></button>
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+  <h1>Catagories</h1>
+
+
+    {% for post in category %}
+ 
+      <li class="card-title"><strong>Name</strong>: {{ post.name }}</li>
+      
+    {% endfor %}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+{% endblock  %}
