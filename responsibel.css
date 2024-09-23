@@ -1,0 +1,163 @@
+
+@media screen and (max-width: 768px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      
+    }
+
+
+
+ul[class^="nav"]{
+    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 20px;
+   
+
+  
+}
+
+
+
+/* serious food styling here */
+.serious--food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    text-align: center;
+    margin: 10px auto;
+
+
+
+
+}
+
+
+
+
+
+
+/* healthy food */
+
+
+.healthy--food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+
+
+/* veggie food */
+.veggie--food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* variety foods */
+.variety--food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+}
+
+.variety--food--cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.variety--card{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #000;
+    margin: 0 auto;
+}
+
+.variety--card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* popular product */
+
+.popular--product--cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+
+.footer--content{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+
+.footer--content div{
+
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* product card */
+
+
+
+
+.product--delivary--card{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 15px 14px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="/box.model.css">
+    
+</head>
+<body>
+
+
+  
+    <header>
+        <!-- header logo start here -->
+
+        <div class="header--logo">
+            <h1>Foodies</h1>
+        </div>
+
+        <!-- header logo end here -->
+
+        <!-- header nav start here -->
+        <div class="header--nav">
+            <ul class="nav">
+                <li class="nav--item1"><a href="/index.html" class="nav--link">Home</a></li>
+                <li class="nav--item2"><a href="/food_about.html" class="nav--link">About us</a></li>
+                <li class="nav--item3"><a href="#" class="nav--link">service Us</a></li>
+                <li class="nav--item4"><a href="/our_company.html" class="nav--link">Our Company </a></li>
+                <li class="nav--item5"><a href="/demo/index.html" class="nav--link">Pages</a></li>
+                <li class="nav--item6"><a href="/box_model.html" class="nav--link">Css box model</a></li>
+            </ul>
+        </div>
+
+        <!-- header nav end here -->
+
+    </header>
+
+
+
+<div class="ccs--box--model">
+   <div class="box--model--title">
+    <h1 >The CSS Box Model</h1>
+   </div>
+    <div class="description">
+        <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+        <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model:</p>
+    </div>
+    <div class="box--model--img">
+        <img src="/image/box--model.png" alt="box--model">
+    </div>
+    <div class="list">
+        <p>Explanation of the different parts:
+        </p>
+        <ul>
+            
+            <li><strong>Content</strong> - The content of the box, where text and images appear</li>
+            <li><strong>Padding</strong>  - Clears an area around the content. The padding is transparent</li>
+            <li><strong>Border</strong> - A border that goes around the padding and content</li>
+            <li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</li>
+        </ul>
+    </div>
+
+    <p class="bottom--text">
+        The box model allows us to add a border around elements, and to define space between elements. 
+
+
+    </p>
+</div>
+
+
+    <h2 style="text-align: center;">CSS Box Model</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Description</th>
+                <th>CSS Properties</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>The actual content of the box, such as text, images, or other media.</td>
+                <td><code>width</code>, <code>height</code></td>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>Space between the content and the border of the box. It increases the size of the box but is transparent.</td>
+                <td><code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, <code>padding-left</code></td>
+            </tr>
+            <tr>
+                <td>Border</td>
+                <td>The edge of the box. It surrounds the padding (if any) and the content.</td>
+                <td><code>border</code>, <code>border-width</code>, <code>border-style</code>, <code>border-color</code></td>
+            </tr>
+            <tr>
+                <td>Margin</td>
+                <td>Space outside the border. It separates the box from other elements on the page.</td>
+                <td><code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>

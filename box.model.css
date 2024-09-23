@@ -1,0 +1,174 @@
+
+
+
+/* default settin reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+}
+
+header h1{
+    font-size: 24px;
+    color: rgba(58, 212, 20, 0.692);
+}
+
+
+ul[class^="nav"]{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    
+
+  
+}
+
+.nav--link{
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+   
+}
+
+.nav--item1 a{
+    color:#47f104;
+}
+
+
+
+
+/* css box model */
+
+.ccs--box--model{
+
+    padding: 2%;
+    line-height: 35px;
+}
+
+.box--model--img{
+    max-width: 90%;
+    max-height: auto;
+}
+
+.box--model--img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.box--model--title{
+
+    margin: 20px auto;
+    text-align: center;
+}
+
+.box--model--title h1{
+    border-bottom: 4px dotted black;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+
+
+
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #333;
+    font-size: 1.1em;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* responsibel */
+
+@media screen and (max-width: 768px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      
+    }
+
+
+
+ul[class^="nav"]{
+    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 20px;
+  
+   
+
+  
+}
+
+
+
+
+
+}

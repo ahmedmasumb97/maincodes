@@ -1,0 +1,477 @@
+/* default settin reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+}
+
+header h1{
+    font-size: 24px;
+    color: rgba(58, 212, 20, 0.692);
+}
+
+
+ul[class^="nav"]{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    
+
+  
+}
+
+.nav--link{
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+   
+}
+
+.nav--item1 a{
+    color:#47f104;
+}
+
+
+
+
+
+
+
+
+/* serious food styling here */
+.serious--food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.serious--food--left--title{
+    font-size: 35px;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.serious--food--left-description{
+
+    font-size: 16px;
+    margin: 10px 0;
+    opacity: 0.7;
+}
+
+.food--btn {
+
+    padding: 13px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+
+}
+
+.serious--food-img{
+    padding: 15px 16px;
+}
+
+
+
+/* product delivary card design */
+
+.product--delivary--card{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 14px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#card--icon{
+    width: 30px;
+  
+  
+}
+
+.product--card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24%;
+    gap: 10px;
+}
+
+.product--card--img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.product--card--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+/* healthy food design here */
+
+.healthy--food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+}
+
+
+.health--food--left--img img{
+    width: 400px;
+}
+
+.health--food--left--img img{
+    object-fit: cover;
+}
+
+.health--food--right--btn button{
+    border: none;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+.health--food--right--title{
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.health--food--right--list{
+    margin: 10px 15px;
+}
+
+
+.health--food--right--list ul >li{
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+
+.health--food--right--list ul li{
+    list-style-image: url(/demo2/image/Icon\ awesome-check.png);
+    list-style-position: inside;
+    
+}
+
+
+
+
+/* veggie foods */
+
+.veggie--food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.veggie--food-left{
+    margin: 0 10px;
+    flex-basis: 45%;
+}
+
+.veggie--food-right{
+    flex-basis: 45%;
+}
+
+.veggie--food-left--btn-group button{
+    border: none;
+    margin: 10px 0;
+    font-weight: 900;
+}
+
+
+.veggie--food--card{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.veggie--card{
+    text-align: center;
+    padding: 7px;
+}
+
+.veggie--food-right-img{
+    width:  350px;
+}
+
+.veggie--food-right-img img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.veggie--food--left--btn-group button{
+    padding: 15px;
+    background-color: rgba(20, 240, 20, 0.904);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+}
+
+
+
+/* variety foods */
+.variety--food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.variety--food--cards{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+    align-items: center;
+}
+
+.variety--card{
+    height: 250px;
+    width: 250px;
+    border: 1px solid green;
+    padding: 10px;
+
+}
+
+.variety--card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.variety--food--button button{
+    border: none;
+    font-weight: 900;
+
+}
+
+.variety--food--title{
+    font-size: 26px;
+    margin-bottom: 15px 0;
+}
+
+.variety--card--btn button{
+    padding: 15px;
+    background-color: rgba(20, 240, 20, 0.904);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0;
+}
+
+
+
+
+/* popular product */
+
+.popular--product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+}
+
+.popular--product--cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.popular--product-card{
+    min-height: 150px;
+    width: 200px;
+    border: 1px solid green;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+}
+
+.popular--product--btn button{
+    border: none;
+    font-weight: 900;
+    
+}
+
+.popular--product--title{
+    font-size: 24px;
+    margin-bottom: 15px 10px;
+}
+
+.card--img{
+    width: 100px;
+    height:100px ;
+    object-fit: contain;
+    margin: 0 auto;
+    
+
+}
+
+.card--img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card--raiting{
+    color: skyblue;
+}
+
+.card--price small:first-child{
+    opacity: 0.6;
+
+}
+
+.card--price small:last-child{
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.card--btn--group button{
+
+    outline: 2px solid skyblue ;
+    border: none;
+    padding: 14px;
+    color: skyblue;
+    margin: 10px 0;
+}
+
+
+
+/* bottom card img */
+
+.bottom--cards{
+    background-image: url('/image/bg.png') ;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    min-width: 100%;
+    background-size: 100% 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.bottom--card--title h1{
+
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+
+}
+
+
+.bottom-card--btn button{
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgba(20, 240, 20, 0.904);
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+/* footer */
+footer{
+    margin: 70px 20px;
+}
+.footer--content{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+
+.footer--content div{
+    flex-basis: 24%;
+    line-height: 35px;
+}
+
+
+.footer--about--description{
+    font-size: 13px;
+}
+
+
+.footer--about--social--icons i {
+
+    font-size: 20px;
+    margin: 10px 5px;
+
+}
+
+
+.footer-emial--form input[type="email"]{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+
+}
+
+.footer-emial--form button{
+    border: none;
+    padding: 11px;
+    background-color: rgba(20, 240, 20, 0.904);
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -5.5px;
+}
